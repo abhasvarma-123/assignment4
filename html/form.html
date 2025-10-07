@@ -10,7 +10,7 @@
 
     <div class="form-section">
         <h1>Submit a Form</h1>
-        <form method="post" action="" onsubmit="return checkDetails()" class="form-body">
+        <form id="formbody" method="post" action="" class="form-body">
             <label for="">Name: </label>
             <input type="text" name="" id="Name">
     
@@ -23,12 +23,12 @@
             <label for="">Location: </label>
             <input type="text" name="" id="loc">
 
-            <button class="submitbtn" type="submit">Submit</button>
+            <button id="subbtn" onclick="checkDetails()" class="submitbtn" type="button">Submit</button>
         </form>
         <p id="warning"><br></p>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     
 </body>
 </html>
